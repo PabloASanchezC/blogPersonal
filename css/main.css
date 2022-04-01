@@ -61,6 +61,10 @@ header .headerIconsContainer .icons svg path {
   fill: var(--whitesy);
 }
 
+header .headerIconsContainer .icons svg path:hover {
+  fill: var(--yerange);
+}
+
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -70,7 +74,7 @@ nav {
 }
 
 nav .navLogoContainer img {
-    width: 80px;
+  width: 80px;
 }
 
 nav .profileLink {
@@ -81,16 +85,54 @@ nav .profileLink {
 }
 
 nav .profileLink a {
-    color: var(--deepBlue);
-    font-size: 2rem;
-    border-bottom: 1px solid var(--deepBlue);
+  color: var(--deepBlue);
+  font-size: 2rem;
+  border-bottom: 1px solid var(--deepBlue);
+  font-family: 'Outfit', sans-serif;
 }
 
-main {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBibHVlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.homeMain {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBibHVlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-items: center;
+  align-items: flex-start;
+  /* place-items: center; */
+}
+
+.homeMain section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 80px;
+  margin-top: 100px;
+}
+
+.homeMain section .homeMainText {
+  color: var(--whitesy);
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.homeMain section .homeMainButton {
+  width: max-content;
+  height: max-content;
+  justify-self: center;
+  align-self: flex-end;
+  background-color: var(--yerange);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.homeMain section .homeMainButton a {
+  text-decoration: none;
+  color: var(--deepBlue);
+  font-weight: bold;
 }
