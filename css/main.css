@@ -19,6 +19,7 @@ html {
 /* para medida rem*/
 
 body {
+  font-family: "Outfit", sans-serif;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -88,12 +89,12 @@ nav .profileLink a {
   color: var(--deepBlue);
   font-size: 2rem;
   border-bottom: 1px solid var(--deepBlue);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .homeMain {
   width: 100%;
-  height: 100vh;
+  height: 73%;
   display: grid;
   grid-template-columns: 1fr;
   background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBibHVlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
@@ -117,10 +118,11 @@ nav .profileLink a {
   font-size: 2.8rem;
   text-align: center;
   font-weight: 600;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .homeMain section .homeMainButton {
+  font-family: "Outfit", sans-serif;
   width: max-content;
   height: max-content;
   justify-self: center;
@@ -129,10 +131,44 @@ nav .profileLink a {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-}
-
-.homeMain section .homeMainButton a {
   text-decoration: none;
   color: var(--deepBlue);
   font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.homeMain section .homeMainButton:hover {
+  background-color: var(--whitesy);
+  width: 112px;
+  height: 28px;
+  padding-top: 6px;
+}
+
+.blogMain {
+  color: var(--whitesy);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--deepBlue);
+  justify-content: space-around;
+  border-top: solid 12px var(--yerange)
+}
+
+footer div {
+padding-top: 8px;
+color: var(--whitesy);
+font-size: 1.2rem;
+}
+
+footer a {
+  color: var(--yerange)
+}
+
+footer a:hover{
+  color: var(--elegantBlue);
 }
