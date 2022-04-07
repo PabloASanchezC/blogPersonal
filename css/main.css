@@ -27,6 +27,10 @@ body {
   right: 0;
 }
 
+.blogBody {
+  position: unset;
+}
+
 a {
   text-decoration: none;
   display: inline;
@@ -76,6 +80,7 @@ nav {
 
 nav .navLogoContainer img {
   width: 80px;
+  margin-left: 20px;
 }
 
 nav .profileLink {
@@ -94,7 +99,7 @@ nav .profileLink a {
 
 .homeMain {
   width: 100%;
-  height: 65%;
+  height: 65vh;
   display: grid;
   grid-template-columns: 1fr;
   background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBibHVlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
@@ -146,7 +151,55 @@ nav .profileLink a {
 }
 
 .blogMain {
+  display: grid;
   color: var(--whitesy);
+}
+
+.blogMainSect {
+  background-color: var(--elegantBlue);
+  padding: 0 40px 10px;
+}
+
+.sectNews {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  margin-top: 5px;
+}
+
+.newsImgContainer {
+  grid-column: 1;
+}
+
+.newsImgContainer img {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.newsInfoContainer {
+  grid-column: 2;
+  align-self: center;
+}
+
+.newsInfoContainer h2 {
+  font-size: 1.8rem;
+}
+
+.newsInfoContainer p {
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.blogPostsContainer {
+  padding: 0 50px 40px;
+}
+
+.blogPostsContainer h3 {
+  color: var(--whitesy);
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--yerange);
 }
 
 footer {
