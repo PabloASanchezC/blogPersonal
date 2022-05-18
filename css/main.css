@@ -157,7 +157,7 @@ nav .profileLink a {
 
 .blogMainSect {
   background-color: var(--elegantBlue);
-  padding: 0 40px 10px;
+  padding: 0 40px 20px;
 }
 
 .sectNews {
@@ -165,6 +165,10 @@ nav .profileLink a {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr;
   margin-top: 5px;
+}
+
+.sectNews h3 {
+  font-size: 1.8rem;
 }
 
 .newsImgContainer {
@@ -186,8 +190,23 @@ nav .profileLink a {
 }
 
 .newsInfoContainer p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.blogButton {
+  border: 1px solid var(--yerange);
+  padding: 4px 12px;
+  font-size: 1rem;
+  letter-spacing: .09rem;
+}
+
+.blogButton:hover {
+  background-color: var(--yerange);
+  font-weight:600;
+  color: var(--elegantBlue);
+  border: var(--deepBlue);
 }
 
 .blogPostsContainer {
@@ -202,10 +221,30 @@ nav .profileLink a {
   border-bottom: 1px solid var(--yerange);
 }
 
+.blogPostsContainer .blogPost {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+  max-width: 30%;
+  margin-bottom: 50px;
+}
+
+.blogPostsContainer .blogPost img {
+  width: 100%;
+}
+
+.blogPostsContainer .blogPost p {
+  margin-bottom: 30px;
+}
+
+.blogPostsContainer .blogPost .blogButton {
+  letter-spacing: normal;
+  padding: 4px 8px;
+}
 footer {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 12vh;
   background-color: var(--deepBlue);
   justify-content: space-around;
   border-top: solid 12px var(--yerange);
