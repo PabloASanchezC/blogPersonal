@@ -193,26 +193,26 @@ nav .profileLink a {
   margin-top: 5px;
 }
 
-.newsImgContainer {
+.newsImgContainer, .heroImgContainer {
   grid-column: 1;
 }
 
-.newsImgContainer img {
-  width: 80%;
+.newsImgContainer img, .heroImgContainer img {
+  width: 85%;
   margin-top: 10px;
 }
 
-.newsInfoContainer {
+.newsInfoContainer, .heroInfoContainer {
   grid-column: 2;
   align-self: center;
 }
 
-.newsInfoContainer h2 {
+.newsInfoContainer h2, .heroInfoContainer h2 {
   font-size: 1.8rem;
 }
 
-.newsInfoContainer p {
-  font-size: 1.2rem;
+.newsInfoContainer p, .heroInfoContainer p {
+  font-size: 1.4rem;
   padding-top: 10px;
   margin-bottom: 15px;
 }
@@ -280,6 +280,7 @@ nav .profileLink a {
 
 .blogPostsContainer .blogProyect p {
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .blogPostsContainer .blogProyect .blogButton {
